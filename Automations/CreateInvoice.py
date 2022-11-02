@@ -78,7 +78,7 @@ def createStripeInvoice(moneyCents):
 
 
 def buildStripeProduct(moneyCents):
-    price = stripe.Product.create(
+    stripe.Product.create(
         name="Agro-K Development",
         default_price_data={
             "unit_amount": moneyCents,
